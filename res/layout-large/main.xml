@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    android:orientation="vertical"
+    tools:context=".StartGameActivity" >
+
+    <LinearLayout
+        android:id="@+id/sign_in_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <!-- sign-in button -->
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- sign-out button -->
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="Color Hunt"
+        android:textColor="#ffffffff"
+        android:textSize="50dip"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/easyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dip"
+        android:layout_alignLeft="@+id/medBtn"
+        android:layout_alignRight="@+id/medBtn"
+        android:layout_below="@+id/gameTitle"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/button"
+        android:onClick="setEasy"
+        android:text="@string/easy"
+        android:textColor="#ffffffff"
+        android:textSize="25dip"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/medBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dip"
+        android:layout_alignLeft="@+id/hardBtn"
+        android:layout_alignRight="@+id/hardBtn"
+        android:layout_below="@+id/easyBtn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="setMedium"
+        android:text="@string/medium"
+        android:textColor="#ffffffff"
+        android:textSize="25dip"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/hardBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dip"
+        android:layout_alignLeft="@+id/highBtn"
+        android:layout_alignRight="@+id/highBtn"
+        android:layout_below="@+id/medBtn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="setHard"
+        android:text="@string/hard"
+        android:textColor="#ffffffff"
+        android:textSize="25dip"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/highBtn"
+        android:layout_width="250dip"
+        android:layout_height="70dip"
+        android:layout_below="@+id/hardBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="setHigh"
+        android:text="@string/high_score"
+        android:textColor="#ffffffff"
+        android:textSize="25dip"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/help"
+        android:onClick="goToHelp" />
+
+    <LinearLayout
+        android:id="@+id/play_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameTitle"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- show achievements -->
+
+        <RadioButton
+            android:id="@+id/show_achievements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="#000000"
+            android:text="Achievements" />
+
+        <!-- show leaderboards -->
+
+        <RadioButton
+            android:id="@+id/show_leaderboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="#000000"
+            android:text="Leaderboard" />
+    </LinearLayout>
+
+</RelativeLayout>

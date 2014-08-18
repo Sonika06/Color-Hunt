@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_id">871224624469</string>
+
+<string name="correct_guess_achievement">CgkI1YqjyK0ZEAIQBg</string>
+<string name="number_guesses_leaderboard">CgkI1YqjyK0ZEAIQAQ</string>
+
+
+  <string name="achievement_color">CgkI1YqjyK0ZEAIQBg</string>
+  <string name="achievement_2">CgkI1YqjyK0ZEAIQBw</string>
+  <string name="achievement_3">CgkI1YqjyK0ZEAIQCA</string>
+  <string name="achievement_4">CgkI1YqjyK0ZEAIQCQ</string>
+  <string name="achievement_5">CgkI1YqjyK0ZEAIQCg</string>
+  <string name="leaderboard_scoreboard">CgkI1YqjyK0ZEAIQAQ</string>
+</resources>

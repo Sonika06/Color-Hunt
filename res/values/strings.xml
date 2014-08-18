@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation" >
+    <!-- your strings here; no need now for the translatable attribute -->
+    
+    <string name="app_id">871224624469</string>
+    
+<string name="correct_guess_achievement">CgkI1YqjyK0ZEAIQBg</string>
+<string name="LEADERBOARD_ID">CgkI1YqjyK0ZEAIQAQ</string>
+    <string name="app_name">Color Hunt</string>
+    <string name="gameTitle">Color Hunt</string>
+    <string name="start">Start</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="high_score">High Scores</string>
+    <string name="directions">Choose difficulty:</string>
+    
+    <string name="finalscore">High Scores</string>
+
+</resources>
